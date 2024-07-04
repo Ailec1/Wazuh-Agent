@@ -36,10 +36,8 @@ while true; do
         sudo tar -xvzf v4.2.3.tar.gz -C /usr/local/bin/ && rm -f v4.2.3.tar.gz
         cd /usr/local/bin/yara-4.2.3/
         sudo ./bootstrap.sh && sudo ./configure && sudo make && sudo make install && sudo make check
-        sudo su
-        echo "/usr/local/lib" >> /etc/ld.so.conf
-        ldconfig
-        exit
+        sudo echo "/usr/local/lib" >> /etc/ld.so.conf
+        sudo ldconfig
         sudo mkdir -p /tmp/yara/rules
         sudo curl 'https://valhalla.nextron-systems.com/api/v1/get' \
         -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
