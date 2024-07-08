@@ -12,7 +12,7 @@ while true; do
     1)
         sudo apt-get update -y
         sudo apt-get upgrade -y
-        sudo apt-get install wget curl nano git unzip -y
+        sudo apt-get install gpg wget curl unzip -y
         # sudo apt-get install wget curl nano git unzip ca-certificates -y
         ;;
     2)
