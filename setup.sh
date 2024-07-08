@@ -7,7 +7,6 @@ while true; do
                     "3" "Install Yara Debian/Ubuntu" \
                     "4" "Install Wazuh Agent Fedora" \
                     "5" "Install Yara Fedora"  3>&1 1>&2 2>&3)
-    # Script version 1.0 updated 15 November 2023
     # Depending on the chosen option, execute the corresponding command
     case $OPTION in
     1)
